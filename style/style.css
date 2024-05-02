@@ -3,53 +3,36 @@
 }
 
 /* configuração do nav */
+
+body{
+  background-color: red;
+}
+
+
+.custom-toggler {
+  order: 0;
+  margin-left: auto;
+}
+
+
 .container-fluid {
-  background-color: #556aa9;
+   background-color: #556aa9;  
     display: flex;
     align-items: center;
     justify-content: flex-start; 
-    color: #fff;
-}
-
-#logo-inicio {
-  width: 300px;
-  height: auto;
-  margin-right: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: #fff;
   margin-right: 10px;
-}
-
-.text-nav{
-  font-size: 18px;
-  margin-right: 50px; 
-  transition: text-shadow 0.3s ease; 
-}
-
-.text-nav:hover {
-  text-shadow: 0 0 5px #fff; 
-}
-
-.login {
-  background-color: #556aa9;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-.login:hover {
-  background-color: #45568e; 
 }
 
 .button-container {
   margin-left: auto;
+}
+
+.offcanvas {
+  display: none;
 }
 
 /* carrousel */
@@ -64,4 +47,9 @@ nav a {
   padding: 20px; 
   border-radius: 5px;
   color: #fff; 
+}
+
+/* conteudo sobre o site */
+.overflow-hidden {
+  overflow-x: hidden;
 }

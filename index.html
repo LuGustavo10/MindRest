@@ -51,51 +51,60 @@
 </head>
 
 <body>
-
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand mx-auto" href="index.html"> 
-                <img src="img/logo/final2.png" width="300px" alt="logo-mind-rest">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <!-- navbar -->
+    
+    <style>
+      .rounded-navbar {
+        border-radius: 15px;
+      }
+    </style>
+    
+    <nav class="navbar bg-body-tertiary fixed-top rounded-navbar" style="max-width: 95%; margin: 0 auto; padding: 0; margin-top: 1%;">
+      <div class="container-fluid" style="border-radius: 10px; border: 1px solid black;">
+        <a class="navbar-brand mx-auto" href="index.html"> 
+            <img src="img/logo/final2.png" width="150px" alt="logo-mind-rest">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: #ffff;">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MindRest</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        </button> 
+    </div>
+    
+    </nav>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MindRest</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"> <img src="img/nav/casa.png" width="10px" alt=""> Início</a>
+                    <a class="nav-link active" aria-current="page" href="index.html"> <img src="img/nav/casa.png" width="10px" alt=""> Início</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img src="img/nav/musica.png" width="10px" alt=""> Música</a>
+                    <a class="nav-link" href="#"><img src="img/nav/musica.png" width="10px" alt=""> Música</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img src="img/nav/meditacao.png" width="10px" alt=""> Exercícios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="img/nav/engrenagem.png" width="10px" alt=""> Configuração</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Entrar
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Criar conta</a></li>
-                    <li><a class="dropdown-item" href="#">Logar</a></li>
-                  </ul>
                 </li>
-              </ul>
-            </div>
-          </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/nav/engrenagem.png" width="10px" alt=""> Configuração</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Entrar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Criar conta</a></li>
+                        <li><a class="dropdown-item" href="#">Logar</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </nav>
-
+    </div>
+    
     <main>
-
+        <!-- Carrousel -->
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -133,8 +142,81 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+          </div> 
 
+           <!-- Conteúdo sobre a mindrest --> 
+          <div class="bg-body-secondary position-relative" style="max-width: 90%; margin-left: 5%; margin-top: 2%;">
+            <div class="mb-md-0 p-md-4 float-start" style="width: 50%;">
+                <img src="img/logo/final.png" class="w-100" alt="..." style="background-color: #616a8596; margin-top: 1%;">
+            </div>
+            <div class="p-4 ps-md-0 float-end" style="width: 50%;">
+                <h5 class="mt-0"><strong>MindRest a solução para ansiedade</strong></h5>
+                <p>O MindRest é o seu refúgio online para encontrar paz e tranquilidade em meio ao caos do dia-a-dia. Com uma variedade de recursos cuidadosamente selecionados, 
+                  como músicas relaxantes, exercícios de respiração guiada e jogos terapêuticos, o MindRest é projetado para ajudá-lo a reduzir a ansiedade, acalmar a mente e 
+                  recarregar as energias. Explore nossos conteúdos personalizados e descubra uma jornada de autocuidado e bem-estar. Permita-se relaxar, rejuvenescer e encontrar 
+                  equilíbrio em sua vida com o MindRest.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        
+        <!-- Conteúdo sobre o site -->
+        <h2 style="margin-left: 3%; margin-top: 3%;"><strong>Curiosidades sobre Ansieade</strong></h2>
+
+        <div class="overflow-hidden">
+          <div class="row" style="margin-left: 10%;">
+              <div class="col-md-4">
+                  <div class="card" style="margin-top: 2%; width: 18rem; height: 98%;">
+                      <img src="img/home/card1.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title"><strong>Resposta evolutiva</strong></h5>
+                          <p class="card-text">A respiração desempenha um papel fundamental no controle da ansiedade. Estudos mostram que técnicas de respiração profunda e consciente 
+                            podem ajudar a reduzir os sintomas de ansiedade, acalmando o sistema nervoso e promovendo uma sensação de relaxamento. Praticar exercícios de respiração 
+                            regularmente pode ser uma estratégia eficaz para combater a ansiedade.</p>
+                          <a href="https://www.cnnbrasil.com.br/saude/ansiedade/" class="btn btn-primary">Leia mais</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 order-last order-md-first">
+                  <div class="card" style="margin-top: 2%; width: 18rem; height: 98%;">
+                      <img src="img/home/card2.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title"><strong>Conexão com a Respiração</strong></h5>
+                          <p class="card-text">A ansiedade é uma resposta evolutiva do corpo humano para situações de perigo ou ameaça. 
+                          Quando enfrentamos uma situação estressante, o cérebro desencadeia uma série de reações físicas e emocionais para nos preparar para lidar com o problema. 
+                          No entanto, em alguns casos, essa resposta pode se tornar excessiva ou desregulada, resultando em ansiedade crônica.</p>
+                          <a href="https://drauziovarella.uol.com.br/coronavirus/tecnicas-de-respiracao-para-aliviar-a-ansiedade/" class="btn btn-primary">Leia mais</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 order-first order-md-last">
+                  <div class="card" style="margin-top: 2%; width: 18rem; height: 98.5%;">
+                      <img src="img/home/card3.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title"><strong>Efeito da tecnologia</strong></h5>
+                          <p class="card-text">O uso excessivo de tecnologia, especialmente mídias sociais, pode contribuir para o aumento da ansiedade. 
+                            A constante exposição a notícias negativas, comparação social e pressão para estar sempre conectado pode sobrecarregar o cérebro e 
+                            desencadear sentimentos de estresse e ansiedade. Desconectar-se regularmente e estabelecer limites saudáveis no uso da tecnologia pode ser 
+                            uma maneira eficaz de reduzir a ansiedade.</p>
+                          <a href="https://www.vittude.com/blog/hiperconectividade-como-contribui-para-ansiedade/" class="btn btn-primary">Leia mais</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+        
     </main>
 
     <footer>
