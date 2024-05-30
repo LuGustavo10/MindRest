@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/brainstorm_1787077.png" type="image/png">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MindRest</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="content">
+            <div class="wrapper-header">
+                <div class="content-logo">
+                    <a href="#" class="logo">Mind<span>Rest.</span></a>
+                </div>
+                <div class="right">
+                    <a href="../index.html">Início</a>
+                    <a href="music.html">Música</a>
+                    <a href="respiracao.html">Exercícios</a>
+                </div>
+                <div class="btnMobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="wrapper-main">
+                <div class="left">
+                    <h3>Escute para ajudar <span>na sua ansiedade</span></h3>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo error ullam animi ab quis, pariatur deserunt adipisci aliquid perspiciatis. Enim autem provident vel sint ipsum impedit tempora, sequi culpa. Sapiente.</p> -->
+                    <div class="buttons">
+                        <a class="exercises" href="respiracao.html" style="margin-top: 2%;">Ver exercícios</a>
+                        <!-- <a class="play-music" href=""><i class="fa-solid fa-play"></i> Escutar</a> -->
+                    </div>
+                </div>
+                <div class="right">
+                    <iframe src="https://open.spotify.com/embed/playlist/0eU3ubPAnqeSMi9K3YKVpC?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>   
+        </div>
+    </main>
+        
+    <section class="music-2">
+        <div class="content">
+            <div class="wrapper-items left">
+                <div class="right">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXavtmWzC1MpQ?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="left">
+                    <h3>Escute para <span>relaxar!</span></h3>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section class="music-3">
+        <div class="content">
+            <div class="wrapper-items">
+                <div class="right">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWKap1fTevjS?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="left">
+                    <h3>Escute para te <span>ajudar a dormir!</span></h3>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section class="music-4">
+        <div class="content">
+            <div class="wrapper-items left">
+                <div class="right">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSluGMsH1R9r?utm_source=generator&theme=0" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="left">
+                    <h3>Escute para ajudar no <span>seu foco!</span></h3>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <footer>
+        <p>©Copyright 2024 por MindRest. Direitos de imagens reservadas.</p>
+      </footer>
+    </body>
+
+    <script>
+        let btnMobile = document.querySelectorAll('header .btnMobile')
+        const header = document.querySelector('header')
+    
+        btnMobile.forEach(openMenu =>{
+            openMenu.addEventListener('click', function(){
+                header.classList.toggle('active')
+            })
+        })
+    </script>
+</body>
+</html>

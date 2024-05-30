@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.content{
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+}
+main{
+    padding: 150px 0;
+    background-color: #312952;
+}
+main .wrapper-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .wrapper-main .left {
+    width: 600px;
+    color: #fff;
+}
+main .wrapper-main .left h3{
+    color: #fff;
+    font-weight: 400;
+    line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 50px;
+}
+main .wrapper-main .left h3 span{
+    font-weight: bold;
+    font-size: 60px;
+}
+main .wrapper-main .left p{
+    line-height: 1;
+    margin: 20px 0;
+}
+main .wrapper-main .left .buttons{
+    display: flex;
+    gap: 10px;
+}
+main .wrapper-main .left .buttons a.exercises{
+    outline: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+main .wrapper-main .left .buttons a{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 16.67px;
+    font-weight: bold;
+    color: #000;
+}
+.wrapper-items .right,
+.wrapper-main .right{
+    width: 550px;
+}
+section .wrapper-items{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-items.left:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.wrapper-items h3{
+    color: #fff;
+    font-weight: 400;
+    line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 50px;
+}
+.wrapper-items h3 span{
+    font-weight: bold;
+    font-size: 60px;
+}
+section.music-2{
+    background-color: #123501;
+}
+section.music-3{
+    background-color: #cc5166;
+}
+section.music-4{
+    background-color: black;
+}
+
+@media (max-width: 1100px){
+    .wrapper-main,
+    .wrapper-items{
+        row-gap: 30px;
+        justify-content: center;
+        flex-direction: column-reverse !important;
+    }
+    main .wrapper-main{
+        flex-direction: column !important;
+    }
+    main .wrapper-main .left,
+    main .wrapper-main .right{
+        width: 100%;
+    }
+    main .wrapper-main .left,
+    .wrapper-items h3{
+        font-size: 20px;
+        align-items: center;
+    }
+    main .wrapper-main .left h3 span,
+    .wrapper-items h3 span{
+        font-size: 30px;
+    }
+    main .wrapper-main .left p{
+        font-size: 16.67px;
+    }
+    .wrapper-items .left,
+    .wrapper-items .right{
+        width: 100%;
+    }
+}
+
+/* footer */
+footer{ 
+    text-align: center;
+    padding: 1%;
+  }

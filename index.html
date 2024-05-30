@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindRest - Início</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -16,98 +17,32 @@
   <!-- Script do Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Script personalizado para o carrossel -->
-  <script>
-    // Aguarda que o documento esteja completamente carregado
-    $(document).ready(function () {
-      // Inicializa o carrossel
-      $('#carouselExampleCaptions').carousel();
-
-      // Adiciona evento de clique nos botões indicadores
-      $('.carousel-indicators button').click(function () {
-        // Obtém o índice do slide a ser exibido
-        var slideIndex = $(this).data('bs-slide-to');
-        // Muda para o slide correspondente
-        $('#carouselExampleCaptions').carousel(slideIndex);
-      });
-
-      // Adiciona evento de clique nas setas do carrossel
-      $('.carousel-control-prev').click(function () {
-        $('#carouselExampleCaptions').carousel('prev');
-      });
-
-      $('.carousel-control-next').click(function () {
-        $('#carouselExampleCaptions').carousel('next');
-      });
-
-      // Função para mudar de slide a cada 10 segundos
-      setInterval(function () {
-        $('#carouselExampleCaptions').carousel('next');
-      }, 10000);
-    });
-  </script>
-
-
-
 </head>
 
 <body>
-  <!-- navbar -->
-
-  <style>
-    .rounded-navbar {
-      border-radius: 15px;
-    }
-  </style>
-
-  <nav class="navbar bg-body-tertiary fixed-top rounded-navbar"
-    style="max-width: 95%; margin: 0 auto; padding: 0; margin-top: 1%;">
-    <div class="container-fluid" style="border-radius: 10px; border: 1px solid black;">
-      <a class="navbar-brand mx-auto" href="index.html">
-        <img src="img/logo/final2.png" width="150px" alt="logo-mind-rest">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: #ffff;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- navbar -->
+  <header class="header">
+    <div class="content">
+        <div class="wrapper-header">
+            <div class="content-logo">
+                <a href="index.html" class="logo">Mind<span>Rest.</span></a>
+            </div>
+            <div class="right">
+                <a href="index.html">Início</a>
+                <a href="pages/music.html">Música</a>
+                <a href="pages/respiracao.html">Exercícios</a>
+            </div>
+            <div class="btnMobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
+  </header>
 
-  </nav>
 
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MindRest</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html"> <img src="img/nav/casa.png" width="10px"
-              alt=""> Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="img/nav/musica.png" width="10px" alt=""> Música</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="img/nav/meditacao.png" width="10px" alt=""> Exercícios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="img/nav/engrenagem.png" width="10px" alt=""> Configuração</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Entrar
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Criar conta</a></li>
-            <li><a class="dropdown-item" href="#">Logar</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <main>
+  <header>
     <!-- Carrousel -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -157,13 +92,13 @@
     </div>
 
     <!-- Conteúdo sobre a mindrest -->
-    <div class="bg-body-secondary position-relative" style="max-width: 90%; margin-left: 5%; margin-top: 2%;">
-      <div class="mb-md-0 p-md-4 float-start" style="width: 50%;">
-        <img src="img/logo/final.png" class="w-100" alt="..." style="background-color: #616a8596; margin-top: 1%;">
+    <div class="content-mindrest" class="bg-body-secondary position-relative">
+      <div class="mb-md-0 p-md-4 float-start">
+        <img src="img/logo/final.png" class="w-100" alt="..."" style="padding-top: 4%;">
       </div>
       <div class="p-4 ps-md-0 float-end" style="width: 50%;">
-        <h5 class="mt-0"><strong>MindRest a solução para ansiedade</strong></h5>
-        <p>O MindRest é o seu refúgio online para encontrar paz e tranquilidade em meio ao caos do dia-a-dia. Com uma
+        <h3 style="padding: 2%;" class="h2-class">MindRest a solução para ansiedade</h3>
+        <p class="text-contet-mind-rest">O MindRest é o seu refúgio online para encontrar paz e tranquilidade em meio ao caos do dia-a-dia. Com uma
           variedade de recursos cuidadosamente selecionados,
           como músicas relaxantes, exercícios de respiração guiada e jogos terapêuticos, o MindRest é projetado para
           ajudá-lo a reduzir a ansiedade, acalmar a mente e
@@ -173,14 +108,17 @@
       </div>
       <div style="clear:both;"></div>
     </div>
+  </header>
 
+  <main>
+    <div class="curiosidade-ansiedade">
     <!-- Conteúdo sobre o site -->
-    <h2 style="margin-left: 3%; margin-top: 3%;"><strong>Curiosidades sobre Ansieade</strong></h2>
+    <h2 class="h2-class">Curiosidades sobre Ansiedade</h2>
 
     <div class="overflow-hidden">
       <div class="row" style="margin-left: 10%;">
         <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 18rem; height: 98%;">
+          <div class="card" style="margin-top: 2%; width: 18rem; height: 98.5%;">
             <img src="img/home/card1.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
             <div class="card-body">
               <h5 class="card-title"><strong>Resposta evolutiva</strong></h5>
@@ -193,8 +131,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 order-last order-md-first">
-          <div class="card" style="margin-top: 2%; width: 18rem; height: 98%;">
+        <div class="col-md-4 order-last order-md">
+          <div class="card" style="margin-top: 2%; width: 18rem; height: 98.5%;">
             <img src="img/home/card2.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
             <div class="card-body">
               <h5 class="card-title"><strong>Conexão com a Respiração</strong></h5>
@@ -210,7 +148,7 @@
           </div>
         </div>
         <div class="col-md-4 order-first order-md-last">
-          <div class="card" style="margin-top: 2%; width: 18rem; height: 98.5%;">
+          <div class="card" style="margin-top: 2%; width: 18rem; height: 98.5%;;">
             <img src="img/home/card3.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
             <div class="card-body">
               <h5 class="card-title"><strong>Efeito da tecnologia</strong></h5>
@@ -228,62 +166,57 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- como combater a ansiedade -->
 
-    <h2 style="margin-left: 3%; margin-top: 3%;"><strong>Como Combater a Ansiedade</strong></h2>
+    <div class="combate-ansiedade">
+      <h2 class="h2-class">Como Combater a Ansiedade</h2>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
-            <img src="img/home/card-ansiedade-1.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
+              <img src="img/home/card-ansiedade-1.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body">
               <h5 class="card-title"><strong>Respiração Profunda</strong></h5>
-              <p class="card-text mb-4">Pratique a respiração profunda, inspirando lentamente pelo nariz, enchendo
+              <p class="card-text" class="card-text">Pratique a respiração profunda, inspirando lentamente pelo nariz, enchendo
                 completamente os pulmões de ar, e expirando igualmente devagar pela boca. Repita esse padrão de
-                respiração várias vezes para acalmar o sistema nervoso e reduzir a ansiedade. <br>
-                Sente-se ou deite-se confortavelmente e coloque uma mão sobre o peito e outra sobre o abdômen. Ao
-                inspirar, sinta o abdômen se expandindo enquanto o peito permanece relativamente estável. Isso ajuda a
-                aumentar a capacidade pulmonar e a promover relaxamento.
+                respiração várias vezes para acalmar o sistema nervoso e reduzir a ansiedade. 
               </p>
-              <div class="text-center">
-                <a href="respiracao.html" class="btn btn-primary">Praticar</a>
+                <div class="text-center">
+                  <a href="pages/respiracao.html" class="btn btn-primary">Praticar</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
-            <img src="img/home/card-ansiedade-2.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Música Relaxante</strong></h5>
-              <p class="card-text mb-4">Explore gêneros musicais conhecidos por suas propriedades relaxantes, como
-                música clássica, ambiente, ou sons da natureza. Evite músicas com batidas fortes ou letras agitadas,
-                pois podem aumentar a ansiedade. <br>
-                Monte playlists personalizadas com músicas que você ache reconfortantes e que o ajudem a relaxar. Ter
-                uma seleção de músicas tranquilas à mão pode ser útil em momentos de estresse. <br>
-                Ao ouvir música, concentre-se conscientemente nos sons, ritmos e melodias. Permita-se mergulhar na
-                experiência auditiva e deixe que a música o transporte para um estado de calma e tranquilidade.
-              </p>
-              <div class="text-center">
-                <a href="musica.html" class="btn btn-primary">Escutar</a>
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
+              <img src="img/home/card-ansiedade-2.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Música Relaxante</strong></h5>
+                <p class="card-text">Explore gêneros musicais conhecidos por suas propriedades relaxantes, como
+                  música clássica, ambiente, ou sons da natureza. <br>
+                  Ter uma seleção de músicas tranquilas à mão pode ser útil em momentos de estresse. <br>
+                </p>
+                <div class="text-center">
+                  <a href="pages/music.html" class="btn btn-primary">Escutar</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 100%;">
-            <img src="img/home/card-ansiedade-3.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title"><strong>Busca Ajuda de um Profissional</strong></h5>
-              <p class="card-text mb-4">Em casos de ansiedade severa ou crônica, é importante buscar ajuda profissional.
-                Um psicólogo ou psiquiatra pode oferecer terapias específicas, como terapia cognitivo-comportamental
-                (TCC) ou terapia de exposição, que são altamente eficazes no tratamento da ansiedade. Além disso, em
-                alguns casos, a medicação pode ser prescrita para ajudar a controlar os sintomas de ansiedade.</p>
-              <a href="https://cvv.org.br/" class="btn btn-primary">Buscar Ajuda</a>
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
+              <img src="img/home/card-ansiedade-3.jpeg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title"><strong>Ajuda Profissional</strong></h5>
+                <p class="card-text">Se estiver sofrendo de ansiedade severa ou crônica, é essencial buscar ajuda profissional. 
+                  Para suporte emocional imediato, você também pode entrar em contato com o Centro de Valorização da Vida (CVV) 
+                  através do número 188,  disponível 24 horas por dia, todos os dias da semana.</p>
+                <a href="https://cvv.org.br/" class="btn btn-primary">Buscar Ajuda</a>
+              </div>
             </div>
           </div>
         </div>
@@ -291,81 +224,90 @@
     </div>
 
     <!-- sobre nós -->
-    <h2 style="margin-left: 3%; margin-top: 3%;"><strong>Sobre Nós</strong></h2>
+    <div class="sobre-nos">
+      <h2 class="h2-class">Sobre Nós</h2>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
-            <img src="img/home/sobre-nos-1.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Andrey de Mendonça</strong></h5>
-              <p class="card-text mb-4">Pratique a respiração profunda, inspirando lentamente pelo nariz, enchendo
-                completamente os pulmões de ar, e expirando igualmente devagar pela boca. Repita esse padrão de
-                respiração várias vezes para acalmar o sistema nervoso e reduzir a ansiedade. <br>
-                Sente-se ou deite-se confortavelmente e coloque uma mão sobre o peito e outra sobre o abdômen. Ao
-                inspirar, sinta o abdômen se expandindo enquanto o peito permanece relativamente estável. Isso ajuda a
-                aumentar a capacidade pulmonar e a promover relaxamento.
-              </p>
-              <div class="text-center">
-                <a href="https://www.linkedin.com/in/dreymendonca/" class="btn btn-primary">LinkedIn</a>
-                <a href="https://github.com/DreyMendonca" class="btn btn-primary">GitHub</a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
+              <img src="img/home/sobre-nos-1.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Andrey de Mendonça</strong></h5>
+                <p class="card-text mb-4">Tenho uma grande paixão por tecnologia! <br> <br>
+
+                  Possuo certificação técnica em Desenvolvimento de Sistemas na ETEC. Atualmente, curso o ensino superior 
+                  em Desenvolvimento de Software Multiplataforma na Fatec, onde estou expandindo meus conhecimentos e habilidades. 
+                  Tenho domínio nas tecnologias HTML, CSS e React Native, o que me permite criar interfaces modernas e eficientes 
+                  para aplicativos e websites. <br> <br>
+                  
+                  Estou sempre buscando melhorar minhas habilidades, e recentemente tenho me aprofundado em JavaScript e Java para 
+                  desenvolver soluções mais robustas e eficientes. <br> <br>
+                  
+                  Além do aspecto profissional, gosto muito de futebol e tecnologia. Esses hobbies me ajudam a manter o equilíbrio e a 
+                  criatividade no dia a dia. Com uma visão de futuro promissora, estou sempre em busca de novas realizações e desafios 
+                  que me permitam crescer pessoal e profissionalmente.
+                </p>
+                <div class="text-center">
+                  <a href="https://www.linkedin.com/in/dreymendonca/" class="btn btn-primary">LinkedIn</a>
+                  <a href="https://github.com/DreyMendonca" class="btn btn-primary">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
-            <img src="img/home/sobre-nos-2.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Diego Castellini</strong></h5>
-              <p class="card-text mb-4">Sou um estudante de desenvolvimento de software e apaixonado pela área! <br>
-                <br>
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 98%;">
+              <img src="img/home/sobre-nos-2.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Diego Castellini</strong></h5>
+                <p class="card-text mb-4">Sou um estudante de desenvolvimento de software e apaixonado pela área! <br>
+                  <br>
 
-                Desde o ensino médio venho aprimorando minhas habilidades, onde cursei o curso técnico em
-                desenvolvimento de sistemas. Atualmente curso o ensino superior em Desenvolvimento de Software
-                Multiplataforma, na Fatec Zona Leste, e busco minha primeira oportunidade no mercado de trabalho como
-                desenvolvedor! <br> <br>
+                  Desde o ensino médio venho aprimorando minhas habilidades, onde cursei o curso técnico em
+                  desenvolvimento de sistemas. Atualmente curso o ensino superior em Desenvolvimento de Software
+                  Multiplataforma, na Fatec Zona Leste, e busco minha primeira oportunidade no mercado de trabalho como
+                  desenvolvedor! <br> <br>
 
-                Tenho experiência em trabalho em equipe, comunicação e organização no ambiente profissional. Atuo como
-                assistente de TI, e durante esse tempo que venho atuando nesse cargo pude me desenvolver pessoal e
-                profissionalmente. <br> <br>
+                  Tenho experiência em trabalho em equipe, comunicação e organização no ambiente profissional. Atuo como
+                  assistente de TI, e durante esse tempo que venho atuando nesse cargo pude me desenvolver pessoal e
+                  profissionalmente. <br> <br>
 
-                Domino as tecnologias HTML e CSS, e estou me aprofundando em Javascript para melhorar ainda mais a
-                experiência que os meus projetos oferecem. Também adoro estudar sobre soluções em Cloud Computing, e não
-                é atoa que sou certificado pela IBM como Technical Advocate!
-              </p>
-              <div class="text-center">
-                <a href="https://www.linkedin.com/in/diego-c-ramirez/" class="btn btn-primary">LinkedIn</a>
-                <a href="https://github.com/digxz" class="btn btn-primary">GitHub</a>
+                  Domino as tecnologias HTML e CSS, e estou me aprofundando em Javascript para melhorar ainda mais a
+                  experiência que os meus projetos oferecem. Também adoro estudar sobre soluções em Cloud Computing, e não
+                  é atoa que sou certificado pela IBM como Technical Advocate!
+                </p>
+                <div class="text-center">
+                  <a href="https://www.linkedin.com/in/diego-c-ramirez/" class="btn btn-primary">LinkedIn</a>
+                  <a href="https://github.com/digxz" class="btn btn-primary">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card" style="margin-top: 2%; width: 22rem; height: 100%;">
-            <img src="img/home/sobre-nos-3.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Luís Gustavo</strong></h5>
-              <p class="card-text mb-4">Sou um estudante apaixonado por tecnologia! <br><br>
+          <div class="col-md-4">
+            <div class="card" style="margin-top: 2%; width: 22rem; height: 100%;">
+              <img src="img/home/sobre-nos-3.jpg" class="card-img-top" style="width: 100%; height: auto;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Luís Gustavo</strong></h5>
+                <p class="card-text mb-4">Sou um estudante apaixonado por tecnologia! <br><br>
 
-                Possuo certificação técnica em Desenvolvimento de Sistemas na ETEC. Atualmente, curso o ensino superior em Desenvolvimento de Software
-                Multiplataforma na Fatec e  tenho certificação em "Introdução a linguagem Java" na USP, que me proporcionou uma base sólida nessa linguagem tão
-                importante<br><br>
+                  Possuo certificação técnica em Desenvolvimento de Sistemas na ETEC. Atualmente, curso o ensino superior em Desenvolvimento de Software
+                  Multiplataforma na Fatec e  tenho certificação em "Introdução a linguagem Java" na USP, que me proporcionou uma base sólida nessa linguagem tão
+                  importante<br><br>
 
-                Domino as tecnologias HTML e CSS, e estou me aprofundando em JavaScript para melhorar ainda mais a
-                experiência que os meus projetos oferecem. Atualmente, estou aprofundando meus conhecimentos em Java,
-                visando criar soluções mais robustas e eficientes. <br><br>
+                  Domino as tecnologias HTML e CSS, e estou me aprofundando em JavaScript para melhorar ainda mais a
+                  experiência que os meus projetos oferecem. Atualmente, estou aprofundando meus conhecimentos em Java,
+                  visando criar soluções mais robustas e eficientes. <br><br>
 
-                Fora do âmbito profissional, gosto muito de futebol e games, hobbies que me ajudam a manter o equilíbrio
-                e a criatividade no dia a dia. Com uma visão de futuro promissora, estou sempre em busca de novas
-                realizações e desafios que me permitam crescer pessoal e profissionalmente.
-              </p>
-              <div class="text-center">
-                <a href="https://www.linkedin.com/in/lugustavos/" class="btn btn-primary">LinkedIn</a>
-                <a href="https://github.com/LuGustavo10" class="btn btn-primary">GitHub</a>
+                  Fora do âmbito profissional, gosto muito de futebol e games, hobbies que me ajudam a manter o equilíbrio
+                  e a criatividade no dia a dia. Com uma visão de futuro promissora, estou sempre em busca de novas
+                  realizações e desafios que me permitam crescer pessoal e profissionalmente.
+                </p>
+                <div class="text-center">
+                  <a href="https://www.linkedin.com/in/lugustavos/" class="btn btn-primary">LinkedIn</a>
+                  <a href="https://github.com/LuGustavo10" class="btn btn-primary">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -375,11 +317,12 @@
 
   </main>
 
-  <footer class="text-center mt-5">
+  <footer>
     <p>©Copyright 2024 por MindRest. Direitos de imagens reservadas.</p>
   </footer>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/carousel.js"></script>
 
 </html>
