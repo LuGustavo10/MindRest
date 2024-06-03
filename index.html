@@ -322,7 +322,16 @@
     <p>©Copyright 2024 por MindRest. Direitos de imagens reservadas.</p>
   </footer>
 </body>
+<script>
+  let btnMobile = document.querySelectorAll('header .btnMobile')
+  const header = document.querySelector('header')
 
+  btnMobile.forEach(openMenu =>{
+      openMenu.addEventListener('click', function(){
+          header.classList.toggle('active')
+      })
+  })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/carousel.js"></script>
 

@@ -54,6 +54,15 @@
 
     <script src="../js/respiracao.js"></script>
 </body>
+<script>
+    let btnMobile = document.querySelectorAll('header .btnMobile')
+    const header = document.querySelector('header')
 
+    btnMobile.forEach(openMenu =>{
+        openMenu.addEventListener('click', function(){
+            header.classList.toggle('active')
+        })
+    })
+</script>
 
 </html>
