@@ -124,7 +124,7 @@ footer {
 
 @media (max-width: 992px) {
   header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
-    padding: 5%;
+    /* padding: 5%; */
     text-align: center;
   }
   
@@ -135,7 +135,7 @@ footer {
 
 @media (max-width: 768px) {
   header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
-    padding: 10%;
+    /* padding: 10%; */
     font-size: 0.9rem;
   }
   
@@ -146,7 +146,7 @@ footer {
 
 @media (max-width: 576px) {
   header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
-    padding: 15%;
+    /* padding: 15%; */
     font-size: 0.8rem;
   }
   
