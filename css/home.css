@@ -1,3 +1,4 @@
+/* Reset e configuração básica */
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* carrousel */
+/* Carrossel */
 .carousel-item img {
-  max-width: 100%;
+  width: 100%;
   max-height: 400px; 
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .carousel-caption {
@@ -17,71 +20,137 @@
   padding: 20px; 
   border-radius: 5px;
   color: #fff; 
+  text-align: center;
 }
 
-/* conteudo sobre o site */
+/* Conteúdo sobre o site */
 .overflow-hidden {
   overflow-x: hidden;
 }
 
-
-header{
-  background-color:#312952;
-  padding-bottom: 3%;
-  padding-top: 3%;
+header {
+  background-color: #312952;
+  padding: 3% 0;
+  text-align: center;
+  color: #f1f1f1;
 }
 
-.bg-body-secondary{
+.bg-body-secondary {
   max-width: 90%; 
-  margin-left: 5%; 
-  margin-top: 2%;
+  margin: 2% 5%; 
 }
 
-.content-mindrest{
-  background-color:#312952;
+.content-mindrest {
+  background-color: #312952;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar horizontalmente */
+  padding: 3%;
+  color: #f1f1f1; 
 }
 
-.mt-0, .text-contet-mind-rest{
+.image-container {
+  display: flex; /* centralizar a imagem */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #312952;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+  width: 100%;
+  padding-top: 2%;
+  background-color: #312952;
   color: #f1f1f1;
 }
 
-.mt-0{
-  color: #f1f1f1;
+.h2-class {
+  font-weight: bold;
+  color: #f1f1f1; 
 }
 
-/* curiosidade sobre ansiedade */
-.curiosidade-ansiedade{
+/* Curiosidade sobre ansiedade */
+.curiosidade-ansiedade {
   background-color: #123501;
   padding: 3%;
+  text-align: center;
+  color: #f1f1f1; 
 }
 
-.card-text{
+.card-text {
   color: #242121;
+  font-size: 1rem;
 }
 
-strong{
+strong {
   color: #050505;
 }
 
-.h2-class{
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-/* combate a ansiedade */
-.combate-ansiedade{
+/* Combate a ansiedade */
+.combate-ansiedade {
   background-color: #cc5166;
   padding: 3%;
+  text-align: center;
+  color: #f1f1f1; 
 }
 
-/* sobre nos */
-.sobre-nos{
+/* Sobre nós */
+.sobre-nos {
   background-color: #050505;
   padding: 3%;
+  text-align: center;
+  color: #f1f1f1; 
 }
 
-/* footer */
-footer{ 
+/* Footer */
+footer { 
   text-align: center;
   padding-top: 1%;
+  color: #f1f1f1; 
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+  .carousel-item img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
+    padding: 10%;
+    font-size: 0.9rem;
+  }
+  
+  .carousel-item img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  header, .bg-body-secondary, .curiosidade-ansiedade, .combate-ansiedade, .sobre-nos, footer {
+    padding: 15%;
+    font-size: 0.8rem;
+  }
+  
+  .carousel-item img {
+    max-height: 200px;
+  }
 }
